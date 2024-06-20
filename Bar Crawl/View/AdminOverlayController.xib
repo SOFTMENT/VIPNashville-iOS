@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="panton_narrow_bold.ttf">
+            <string>PantonNarrow-Bold</string>
+        </array>
+        <array key="panton_narrow_semibold.ttf">
+            <string>PantonNarrow-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdminOverlayController" customModule="V_I_P_Nashville" customModuleProvider="target">
+            <connections>
+                <outlet property="handle" destination="xK6-3L-QHa" id="8m3-PS-jqH"/>
+                <outlet property="logout" destination="Lmo-JQ-gIg" id="DQ9-3p-T6Y"/>
+                <outlet property="mEmail" destination="B8v-cs-9fd" id="2kp-BX-4UP"/>
+                <outlet property="name" destination="UDC-av-53o" id="0jk-gt-LJq"/>
+                <outlet property="profilePic" destination="GdQ-0E-Wto" id="yEr-1I-esx"/>
+                <outlet property="sendPushNotification" destination="af9-LH-AMx" id="ToK-za-9Z3"/>
+                <outlet property="userPanel" destination="ahm-Ka-P1C" id="ETo-zv-j7N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xK6-3L-QHa">
+                    <rect key="frame" x="156.66666666666666" y="71" width="77" height="2"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="ZqB-fk-Hlx"/>
+                        <constraint firstAttribute="height" constant="2" id="gDM-0K-BZQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-x8-MKA">
+                    <rect key="frame" x="20" y="97" width="350" height="34"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="GdQ-0E-Wto">
+                            <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Or7-F5-nmN"/>
+                                <constraint firstAttribute="width" constant="34" id="wWX-ud-7PN"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-t1-oAp">
+                            <rect key="frame" x="46.000000000000007" y="1.9999999999999982" width="99.666666666666686" height="30.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyler Max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDC-av-53o">
+                                    <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="16.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="13"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="support@softment.in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8v-cs-9fd">
+                                    <rect key="frame" x="0.0" y="19.333333333333329" width="99.666666666666671" height="11"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-SemiBold" family="PantonNarrow-SemiBold" pointSize="11"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wpV-t1-oAp" firstAttribute="centerY" secondItem="GdQ-0E-Wto" secondAttribute="centerY" id="Ueq-qe-XZ7"/>
+                        <constraint firstItem="wpV-t1-oAp" firstAttribute="leading" secondItem="GdQ-0E-Wto" secondAttribute="trailing" constant="12" id="Ums-eu-auL"/>
+                        <constraint firstItem="GdQ-0E-Wto" firstAttribute="leading" secondItem="Fms-x8-MKA" secondAttribute="leading" id="lfb-dA-UPE"/>
+                        <constraint firstAttribute="height" constant="34" id="rGa-Yk-zai"/>
+                        <constraint firstItem="GdQ-0E-Wto" firstAttribute="centerY" secondItem="Fms-x8-MKA" secondAttribute="centerY" id="yQd-xC-pUr"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zfu-7L-NUw">
+                    <rect key="frame" x="20" y="143" width="350" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahm-Ka-P1C">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Panel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-Ve-Jga">
+                                    <rect key="frame" x="0.0" y="17.666666666666657" width="55" height="15"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="12"/>
+                                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="kD7-Ve-Jga" firstAttribute="centerY" secondItem="ahm-Ka-P1C" secondAttribute="centerY" id="4lR-OR-XjR"/>
+                                <constraint firstItem="kD7-Ve-Jga" firstAttribute="leading" secondItem="ahm-Ka-P1C" secondAttribute="leading" id="Psw-gV-QC1"/>
+                                <constraint firstAttribute="height" constant="50" id="lWg-cd-fA2"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="af9-LH-AMx">
+                            <rect key="frame" x="0.0" y="50" width="350" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Push Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH0-hH-ufA">
+                                    <rect key="frame" x="0.0" y="17.666666666666657" width="116.33333333333333" height="15"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="12"/>
+                                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="NH0-hH-ufA" firstAttribute="leading" secondItem="af9-LH-AMx" secondAttribute="leading" id="2ff-5o-Exk"/>
+                                <constraint firstAttribute="height" constant="50" id="7hF-rc-zwA"/>
+                                <constraint firstItem="NH0-hH-ufA" firstAttribute="centerY" secondItem="af9-LH-AMx" secondAttribute="centerY" id="p2Q-JR-FrT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmo-JQ-gIg">
+                            <rect key="frame" x="0.0" y="100" width="350" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sK-sE-ocw">
+                                    <rect key="frame" x="0.0" y="17.666666666666686" width="35.333333333333336" height="15"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="12"/>
+                                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="9sK-sE-ocw" firstAttribute="centerY" secondItem="Lmo-JQ-gIg" secondAttribute="centerY" id="1h9-gl-Pd7"/>
+                                <constraint firstAttribute="height" constant="50" id="a6K-XO-CKM"/>
+                                <constraint firstItem="9sK-sE-ocw" firstAttribute="leading" secondItem="Lmo-JQ-gIg" secondAttribute="leading" id="mBm-OY-QVv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xK6-3L-QHa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="7BS-B0-3nI"/>
+                <constraint firstItem="Fms-x8-MKA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Aed-v5-vbn"/>
+                <constraint firstItem="Fms-x8-MKA" firstAttribute="top" secondItem="xK6-3L-QHa" secondAttribute="bottom" constant="24" id="Bcp-bu-8nr"/>
+                <constraint firstAttribute="trailing" secondItem="Fms-x8-MKA" secondAttribute="trailing" constant="20" id="Lrg-7U-nhi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zfu-7L-NUw" secondAttribute="trailing" constant="20" id="PZj-gW-flf"/>
+                <constraint firstItem="xK6-3L-QHa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cBo-wO-j02"/>
+                <constraint firstItem="zfu-7L-NUw" firstAttribute="top" secondItem="Fms-x8-MKA" secondAttribute="bottom" constant="12" id="hC7-hg-Tpn"/>
+                <constraint firstItem="zfu-7L-NUw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qvl-ma-Vof"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash" width="489" height="501"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

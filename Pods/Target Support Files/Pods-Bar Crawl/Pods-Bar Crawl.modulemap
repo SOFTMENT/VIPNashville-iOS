@@ -1,0 +1,6 @@
+framework module Pods_Bar_Crawl {
+  umbrella header "Pods-Bar Crawl-umbrella.h"
+
+  export *
+  module * { export * }
+}

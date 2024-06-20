@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="panton_narrow_bold.ttf">
+            <string>PantonNarrow-Bold</string>
+        </array>
+        <array key="panton_narrow_regular.otf">
+            <string>PantonNarrow-Regular</string>
+        </array>
+        <array key="panton_narrow_semibold.ttf">
+            <string>PantonNarrow-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MembershipOverlayViewController" customModule="V_I_P_Nashville" customModuleProvider="target">
+            <connections>
+                <outlet property="activateNowBtn" destination="nYN-MS-YcM" id="RHh-cq-dTj"/>
+                <outlet property="animationView" destination="SDn-YM-04E" id="mF1-fP-lYN"/>
+                <outlet property="privacyPolicyBtn" destination="N9N-Fx-Rk4" id="r6c-BW-nqp"/>
+                <outlet property="restoreBtn" destination="cTh-YT-2ur" id="qox-Bq-14k"/>
+                <outlet property="slide" destination="vrT-FO-Ql2" id="kR0-hZ-fGX"/>
+                <outlet property="termsOfUseBtn" destination="TDZ-1z-Juc" id="dJL-jT-YDC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcc-Z4-xNB">
+                    <rect key="frame" x="0.0" y="47" width="390" height="584.66666666666663"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrT-FO-Ql2">
+                            <rect key="frame" x="156.66666666666666" y="28" width="77" height="2"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="Fvy-Nr-BJL"/>
+                                <constraint firstAttribute="width" constant="77" id="jv5-8T-lTt"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-YM-04E" customClass="AnimationView" customModule="Lottie">
+                            <rect key="frame" x="115" y="20" width="160" height="160"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="HzF-wH-s6c"/>
+                                <constraint firstAttribute="width" constant="160" id="pYF-QX-FNk"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="premium"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade to premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4I-2u-oBT">
+                            <rect key="frame" x="100.33333333333333" y="184" width="189.33333333333337" height="27.666666666666657"/>
+                            <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe to V.I.P Nashville pro membership and get access to all city's bars." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6j-up-WzU">
+                            <rect key="frame" x="35" y="221.66666666666669" width="320" height="35"/>
+                            <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19.99 / month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS0-uJ-kPB">
+                            <rect key="frame" x="128.33333333333331" y="286.66666666666669" width="133.33333333333331" height="25"/>
+                            <fontDescription key="fontDescription" name="PantonNarrow-Bold" family="Panton Narrow" pointSize="20"/>
+                            <color key="textColor" red="0.80392156859999997" green="0.031372549020000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYN-MS-YcM">
+                            <rect key="frame" x="20" y="341.66666666666669" width="350" height="44"/>
+                            <color key="backgroundColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5F9-WH-w8u"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PantonNarrow-SemiBold" family="PantonNarrow-SemiBold" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Activate Now">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Bhw-Ri-HIF">
+                            <rect key="frame" x="93.666666666666686" y="550.66666666666663" width="203" height="14"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTh-YT-2ur">
+                                    <rect key="frame" x="0.0" y="0.0" width="36.666666666666664" height="14"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="11"/>
+                                    <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxz-P8-c9S">
+                                    <rect key="frame" x="40.666666666666671" y="0.0" width="2.6666666666666643" height="14"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="11"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms Of Use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDZ-1z-Juc">
+                                    <rect key="frame" x="47.333333333333329" y="0.0" width="62.333333333333329" height="14"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="11"/>
+                                    <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mp-sd-mTI">
+                                    <rect key="frame" x="113.66666666666667" y="0.0" width="18.666666666666671" height="14"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="11"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-Fx-Rk4">
+                                    <rect key="frame" x="136.33333333333331" y="0.0" width="66.666666666666686" height="14"/>
+                                    <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="11"/>
+                                    <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKn-LY-y8o">
+                            <rect key="frame" x="20" y="405.66666666666669" width="350" height="135.00000000000006"/>
+                            <string key="text">Payment will be charged to your iTunes account at confirmation of purchase. Subscriptions will automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal, in accordance with your plan, within 24 hours prior to the end of the current period. You can manage or turn off auto-renew in your Apple ID account settings anytime after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.</string>
+                            <fontDescription key="fontDescription" name="PantonNarrow-Regular" family="Panton Narrow" pointSize="12"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="SDn-YM-04E" firstAttribute="top" secondItem="vrT-FO-Ql2" secondAttribute="bottom" constant="-10" id="4Kk-Je-b6U"/>
+                        <constraint firstItem="VS0-uJ-kPB" firstAttribute="centerX" secondItem="Jcc-Z4-xNB" secondAttribute="centerX" id="5uX-8t-Mnr"/>
+                        <constraint firstItem="Bhw-Ri-HIF" firstAttribute="centerX" secondItem="Jcc-Z4-xNB" secondAttribute="centerX" id="EAq-vk-yYV"/>
+                        <constraint firstAttribute="bottom" secondItem="Bhw-Ri-HIF" secondAttribute="bottom" constant="20" id="I7u-Oq-4hN"/>
+                        <constraint firstAttribute="trailing" secondItem="nYN-MS-YcM" secondAttribute="trailing" constant="20" id="JJl-iB-F1X"/>
+                        <constraint firstItem="vrT-FO-Ql2" firstAttribute="centerX" secondItem="Jcc-Z4-xNB" secondAttribute="centerX" id="JRu-pL-fwS"/>
+                        <constraint firstItem="w6j-up-WzU" firstAttribute="leading" secondItem="Jcc-Z4-xNB" secondAttribute="leading" constant="35" id="Jc2-rl-KFn"/>
+                        <constraint firstItem="nKn-LY-y8o" firstAttribute="top" secondItem="nYN-MS-YcM" secondAttribute="bottom" constant="20" id="OZ0-87-jo5"/>
+                        <constraint firstItem="SDn-YM-04E" firstAttribute="centerX" secondItem="Jcc-Z4-xNB" secondAttribute="centerX" id="S5w-gN-rGk"/>
+                        <constraint firstItem="nKn-LY-y8o" firstAttribute="leading" secondItem="Jcc-Z4-xNB" secondAttribute="leading" constant="20" id="UgK-gj-TVi"/>
+                        <constraint firstItem="VS0-uJ-kPB" firstAttribute="top" secondItem="w6j-up-WzU" secondAttribute="bottom" constant="30" id="Ujn-f1-uiH"/>
+                        <constraint firstItem="w4I-2u-oBT" firstAttribute="top" secondItem="SDn-YM-04E" secondAttribute="bottom" constant="4" id="VQF-SH-MWS"/>
+                        <constraint firstItem="vrT-FO-Ql2" firstAttribute="top" secondItem="Jcc-Z4-xNB" secondAttribute="top" constant="28" id="Zu0-fs-eNU"/>
+                        <constraint firstItem="w6j-up-WzU" firstAttribute="top" secondItem="w4I-2u-oBT" secondAttribute="bottom" constant="10" id="aVy-5B-Ubi"/>
+                        <constraint firstItem="nYN-MS-YcM" firstAttribute="leading" secondItem="Jcc-Z4-xNB" secondAttribute="leading" constant="20" id="eGm-sT-hnw"/>
+                        <constraint firstAttribute="trailing" secondItem="nKn-LY-y8o" secondAttribute="trailing" constant="20" id="f7d-cf-Q3u"/>
+                        <constraint firstAttribute="trailing" secondItem="w6j-up-WzU" secondAttribute="trailing" constant="35" id="lEt-eE-hVS"/>
+                        <constraint firstItem="w4I-2u-oBT" firstAttribute="centerX" secondItem="Jcc-Z4-xNB" secondAttribute="centerX" id="qKk-Bu-tIi"/>
+                        <constraint firstItem="Bhw-Ri-HIF" firstAttribute="top" secondItem="nKn-LY-y8o" secondAttribute="bottom" constant="10" id="sr0-5K-crh"/>
+                        <constraint firstItem="nYN-MS-YcM" firstAttribute="top" secondItem="VS0-uJ-kPB" secondAttribute="bottom" constant="30" id="zAR-4B-kmf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jcc-Z4-xNB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Fw9-4P-LIe"/>
+                <constraint firstItem="Jcc-Z4-xNB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="G0G-Yr-gyc"/>
+                <constraint firstItem="Jcc-Z4-xNB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="w2o-Uv-v82"/>
+            </constraints>
+            <point key="canvasLocation" x="136.92307692307691" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
